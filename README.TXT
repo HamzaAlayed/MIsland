@@ -5,9 +5,9 @@ Authors: Hamza M Alayed
 
 This code and artwork is released under the Apache 2.0 license.  See COPYING for details.
 
-ABOUT REPLICA ISLAND
+ABOUT MIsland
 
-Replica Island is a side-scrolling platformer for Android devices.  It stars the Android robot as its protagonist as he embarks on a dangerous mission to find a mysterious power source.  This is a complete game: all art, dialog, level layouts, and other data are included along with the code.
+MIsland is a side-scrolling platformer for Android devices.  It stars the Android robot as its protagonist as he embarks on a dangerous mission to find a mysterious power source.  This is a complete game: all art, dialog, level layouts, and other data are included along with the code.
 
 ABOUT THE SOURCE
 
@@ -21,7 +21,7 @@ Game.java is a layer of abstraction between AndouKun.java and the game loop itse
 
 GameThread.java is the actual game loop.  It's main utility is to manage the main loop (MainLoop.java), which implements the rest of the game logic.
 
-MainLoop.java is the head of the game graph that describes the Replica Island runtime.  Anything managed by MainLoop will be polled once per frame, and children of MainLoop may themselves have children which will be polled.  GameObjects are a specific type of game graph node that only contain GameComponents as children.  GameComponents implement individual features (collision detection, animation, rendering, etc) of individual game entities.  GameObjects are generally parented to GameObjectManager, which activates and deactivates its children based on their proximity to the camera.  GameObjectManager is a child of MainLoop.
+MainLoop.java is the head of the game graph that describes the MIsland runtime.  Anything managed by MainLoop will be polled once per frame, and children of MainLoop may themselves have children which will be polled.  GameObjects are a specific type of game graph node that only contain GameComponents as children.  GameComponents implement individual features (collision detection, animation, rendering, etc) of individual game entities.  GameObjects are generally parented to GameObjectManager, which activates and deactivates its children based on their proximity to the camera.  GameObjectManager is a child of MainLoop.
 
 The last step in the GameThread is the rendering step.  Rendering does not occur in the game thread.  Instead, render commands are queued up by the game thread and then handed to a separate render thread at a synchronization point.  The render thread is mostly implemented in GameRenderer.java, which is run by GLSurfaceView.java.
 
