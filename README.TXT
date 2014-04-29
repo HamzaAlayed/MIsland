@@ -1,7 +1,7 @@
-Replica Island
+MIsland
 A side scrolling video game for Android.
 
-Authors: Chris Pruett and Genki Mine
+Authors: Hamza M Alayed
 
 This code and artwork is released under the Apache 2.0 license.  See COPYING for details.
 
